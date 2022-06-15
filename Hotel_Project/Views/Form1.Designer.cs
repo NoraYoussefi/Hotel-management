@@ -36,8 +36,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.borderRaduis1 = new HotelManagement.DesignTools.BorderRaduis();
             this.button3 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel1.SuspendLayout();
@@ -127,6 +128,7 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(93)))), ((int)(((byte)(69)))), ((int)(((byte)(77)))));
+            this.panel1.Controls.Add(this.borderRaduis1);
             this.panel1.Controls.Add(this.button3);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.label3);
@@ -137,15 +139,24 @@
             this.panel1.Size = new System.Drawing.Size(572, 666);
             this.panel1.TabIndex = 8;
             // 
-            // panel2
+            // borderRaduis1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
-            this.panel2.Controls.Add(this.pictureBox2);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Location = new System.Drawing.Point(561, 0);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(571, 663);
-            this.panel2.TabIndex = 9;
+            this.borderRaduis1.BackColor = System.Drawing.Color.MediumSlateBlue;
+            this.borderRaduis1.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.borderRaduis1.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.borderRaduis1.BorderRadius = 20;
+            this.borderRaduis1.BorderSize = 0;
+            this.borderRaduis1.FlatAppearance.BorderSize = 0;
+            this.borderRaduis1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.borderRaduis1.ForeColor = System.Drawing.Color.White;
+            this.borderRaduis1.Location = new System.Drawing.Point(189, 546);
+            this.borderRaduis1.Name = "borderRaduis1";
+            this.borderRaduis1.Size = new System.Drawing.Size(225, 60);
+            this.borderRaduis1.TabIndex = 7;
+            this.borderRaduis1.Text = "borderRaduis1";
+            this.borderRaduis1.TextColor = System.Drawing.Color.White;
+            this.borderRaduis1.UseVisualStyleBackColor = false;
+            this.borderRaduis1.Click += new System.EventHandler(this.borderRaduis1_Click);
             // 
             // button3
             // 
@@ -156,6 +167,16 @@
             this.button3.Text = "button3";
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
+            this.panel2.Controls.Add(this.pictureBox2);
+            this.panel2.Controls.Add(this.label4);
+            this.panel2.Location = new System.Drawing.Point(561, 0);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(571, 663);
+            this.panel2.TabIndex = 9;
             // 
             // Form1
             // 
@@ -187,5 +208,6 @@
         private Panel panel1;
         private Panel panel2;
         private Button button3;
+        private HotelManagement.DesignTools.BorderRaduis borderRaduis1;
     }
 }

@@ -1,3 +1,4 @@
+using Hotel_Project.Views;
 using System.Runtime.InteropServices;
 
 namespace Hotel_Project
@@ -74,6 +75,12 @@ namespace Hotel_Project
                 Hotels h = new Hotels();
                 h.Show();
             
+        }
+
+        private void borderRaduis1_Click(object sender, EventArgs e)
+        {
+            adminDashboard a = new adminDashboard();
+            a.Show();
         }
     }
 }
