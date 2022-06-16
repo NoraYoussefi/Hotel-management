@@ -46,3 +46,5 @@ C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-window
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.reservations.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.rooms.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.hotels.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.update.updateHotel.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.add.addHotel.resources

@@ -31,6 +31,9 @@
     <Compile Update="Views\Register.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\UnderDashboard\add\addHotel.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\UnderDashboard\categories.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -47,6 +50,9 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Views\UnderDashboard\rooms.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\UnderDashboard\update\updateHotel.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

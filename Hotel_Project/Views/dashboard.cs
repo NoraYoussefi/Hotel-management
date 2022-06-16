@@ -118,7 +118,7 @@ namespace Hotel_Project.Views
         {
             DisableButton();
             lblTitle.Text = "HOME";
-            panelTitleBar.BackColor = Color.FromArgb(27, 38, 44);
+            panelTitleBar.BackColor = Color.FromArgb(93, 69, 77);
             currentButton = null;
             btnCloseChildForm.Visible = false;
         }
@@ -272,7 +272,7 @@ namespace Hotel_Project.Views
 
         private void button6_Click_1(object sender, EventArgs e)
         {
-            OpenChildForm_1(new UnderDashboard.hotels(), sender);
+            OpenChildForm(new UnderDashboard.hotels(), sender);
         }
     }
 }

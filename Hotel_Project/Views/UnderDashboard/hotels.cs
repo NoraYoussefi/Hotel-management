@@ -1,4 +1,5 @@
 ﻿using Hotel_Project.Data;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,6 +9,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Hotel_Project.Views.UnderDashboard.update;
+using Hotel_Project.Views.UnderDashboard.add;
 
 namespace Hotel_Project.Views.UnderDashboard
 {
@@ -26,18 +29,19 @@ namespace Hotel_Project.Views.UnderDashboard
         private void hotels_Load(object sender, EventArgs e)
         {
             Database db = new Database();
-
-            List<Hotel> AllHotels = db.Hotels.ToList();
-            int y = 54;
+            List<Hotel> AllHotels = db.Hotels.Include(c => c.Cassement).Include(a => a.Address).ToList();
+            int y = 55;
             foreach (Hotel h in AllHotels)
             {
                 Panel panel1;
                 panel1 = new System.Windows.Forms.Panel();
+
                 Label Id_hotel;
                 Id_hotel = new System.Windows.Forms.Label();
 
+                panel1.SuspendLayout();
                 panel1.BackColor = System.Drawing.Color.White;
-                panel1.Location = new System.Drawing.Point(44, 57 + y);
+                panel1.Location = new System.Drawing.Point(20, 57 + y);
                 panel1.Name = "panel1";
                 panel1.Size = new System.Drawing.Size(847, 51);
                 panel1.TabIndex = 0;
@@ -84,7 +88,7 @@ namespace Hotel_Project.Views.UnderDashboard
                 classement.Name = "classement";
                 classement.Size = new System.Drawing.Size(99, 25);
                 classement.TabIndex = 13;
-                classement.Text = h.CassementId.ToString();
+                classement.Text = h.Cassement.coef.ToString();
 
                 //address
                 Label address;
@@ -95,7 +99,39 @@ namespace Hotel_Project.Views.UnderDashboard
                 address.Name = "address";
                 address.Size = new System.Drawing.Size(74, 25);
                 address.TabIndex = 14;
-                /*address.Text = h.Address.ToString();*/
+                address.Text = h.Address.City.ToString();
+
+                //update button
+                Button update;
+                update = new System.Windows.Forms.Button();
+                update.BackColor = System.Drawing.Color.White;
+                update.BackgroundImage = global::Hotel_Project.Properties.Resources.cloud_sync1;
+                update.FlatAppearance.BorderSize = 0;
+                update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+                update.Location = new System.Drawing.Point(672, 3);
+                update.Name = "update";
+                update.Size = new System.Drawing.Size(51, 42);
+                update.TabIndex = 16;
+                update.UseVisualStyleBackColor = false;
+                update.Click += (s, e) => update_Click(s, e, h);
+
+
+
+                //delete button
+                Button delete;
+                delete = new System.Windows.Forms.Button();
+
+                delete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+                delete.BackColor = System.Drawing.Color.White;
+                delete.BackgroundImage = global::Hotel_Project.Properties.Resources.delete;
+                delete.FlatAppearance.BorderSize = 0;
+                delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+                delete.Location = new System.Drawing.Point(757, 3);
+                delete.Name = "delete";
+                delete.Size = new System.Drawing.Size(53, 46);
+                delete.TabIndex = 15;
+                delete.UseVisualStyleBackColor = false;
+
 
 
                 panel1.Controls.Add(hotel_title);
@@ -103,24 +139,13 @@ namespace Hotel_Project.Views.UnderDashboard
                 panel1.Controls.Add(num_tel);
                 panel1.Controls.Add(classement);
                 panel1.Controls.Add(address);
+                panel1.Controls.Add(update);
+                panel1.Controls.Add(delete);
                 this.Controls.Add(panel1);
 
-                y = y + 54;
+                y = y + 55;
 
-                /* Label test;
-                 test = new System.Windows.Forms.Label();
-
-                 test.AutoSize = true;
-                 test.Location = new System.Drawing.Point(193, 204+y);
-                 test.Name = "test";
-                 test.Size = new System.Drawing.Size(59, 25);
-                 test.TabIndex = 1;
-                 test.Text = h.Name;
-                 test.Click += new System.EventHandler(this.test_Click);
-
-                 this.Controls.Add(test);
-
-                 y = y + 54;*/
+                
             }
 
         }
@@ -128,6 +153,18 @@ namespace Hotel_Project.Views.UnderDashboard
         private void title_Click(object sender, EventArgs e)
         {
 
+        }
+        private void update_Click(object sender, EventArgs e, Hotel h )
+        {
+            updateHotel updateHotel = new updateHotel();
+            updateHotel.Show();
+
+        }
+
+        private void add_hotel_Click(object sender, EventArgs e)
+        {
+            addHotel addHotel = new addHotel();
+            addHotel.Show();
         }
     }
 }
