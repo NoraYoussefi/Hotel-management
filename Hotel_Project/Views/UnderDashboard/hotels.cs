@@ -64,8 +64,45 @@ namespace Hotel_Project.Views.UnderDashboard
                 hotel_title.Text = h.Name;
 
 
+                //num_tel
+                Label num_tel;
+                num_tel = new System.Windows.Forms.Label();
+
+                num_tel.AutoSize = true;
+                num_tel.Location = new System.Drawing.Point(200, 12);
+                num_tel.Name = "num_tel";
+                num_tel.Size = new System.Drawing.Size(31, 25);
+                num_tel.TabIndex = 12;
+                num_tel.Text = h.NumTel.ToString();
+
+                //classement
+                Label classement;
+                classement = new System.Windows.Forms.Label();
+
+                classement.AutoSize = true;
+                classement.Location = new System.Drawing.Point(305, 14);
+                classement.Name = "classement";
+                classement.Size = new System.Drawing.Size(99, 25);
+                classement.TabIndex = 13;
+                classement.Text = h.CassementId.ToString();
+
+                //address
+                Label address;
+                address = new System.Windows.Forms.Label();
+
+                address.AutoSize = true;
+                address.Location = new System.Drawing.Point(440, 14);
+                address.Name = "address";
+                address.Size = new System.Drawing.Size(74, 25);
+                address.TabIndex = 14;
+                /*address.Text = h.Address.ToString();*/
+
+
                 panel1.Controls.Add(hotel_title);
                 panel1.Controls.Add(Id_hotel);
+                panel1.Controls.Add(num_tel);
+                panel1.Controls.Add(classement);
+                panel1.Controls.Add(address);
                 this.Controls.Add(panel1);
 
                 y = y + 54;

@@ -28,13 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(hotels));
             this.panel1 = new System.Windows.Forms.Panel();
             this.update = new System.Windows.Forms.Button();
             this.delete = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
             this.address = new System.Windows.Forms.Label();
-            this.stars = new System.Windows.Forms.Label();
+            this.classement = new System.Windows.Forms.Label();
+            this.num_tel = new System.Windows.Forms.Label();
             this.hotel_title = new System.Windows.Forms.Label();
             this.Id_hotel = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
@@ -45,9 +44,9 @@
             this.panel1.BackColor = System.Drawing.Color.White;
             this.panel1.Controls.Add(this.update);
             this.panel1.Controls.Add(this.delete);
-            this.panel1.Controls.Add(this.label1);
             this.panel1.Controls.Add(this.address);
-            this.panel1.Controls.Add(this.stars);
+            this.panel1.Controls.Add(this.classement);
+            this.panel1.Controls.Add(this.num_tel);
             this.panel1.Controls.Add(this.hotel_title);
             this.panel1.Controls.Add(this.Id_hotel);
             this.panel1.Location = new System.Drawing.Point(29, 41);
@@ -59,7 +58,7 @@
             // update
             // 
             this.update.BackColor = System.Drawing.Color.White;
-            this.update.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("update.BackgroundImage")));
+            this.update.BackgroundImage = global::Hotel_Project.Properties.Resources.cloud_sync1;
             this.update.FlatAppearance.BorderSize = 0;
             this.update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.update.Location = new System.Drawing.Point(672, 3);
@@ -72,7 +71,7 @@
             // 
             this.delete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.delete.BackColor = System.Drawing.Color.White;
-            this.delete.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("delete.BackgroundImage")));
+            this.delete.BackgroundImage = global::Hotel_Project.Properties.Resources.delete;
             this.delete.FlatAppearance.BorderSize = 0;
             this.delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.delete.Location = new System.Drawing.Point(757, 3);
@@ -81,32 +80,32 @@
             this.delete.TabIndex = 15;
             this.delete.UseVisualStyleBackColor = false;
             // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(440, 14);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(74, 25);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "address";
-            // 
             // address
             // 
             this.address.AutoSize = true;
-            this.address.Location = new System.Drawing.Point(305, 14);
+            this.address.Location = new System.Drawing.Point(440, 14);
             this.address.Name = "address";
-            this.address.Size = new System.Drawing.Size(99, 25);
-            this.address.TabIndex = 13;
-            this.address.Text = "classement";
+            this.address.Size = new System.Drawing.Size(74, 25);
+            this.address.TabIndex = 14;
+            this.address.Text = "address";
             // 
-            // stars
+            // classement
             // 
-            this.stars.AutoSize = true;
-            this.stars.Location = new System.Drawing.Point(200, 12);
-            this.stars.Name = "stars";
-            this.stars.Size = new System.Drawing.Size(31, 25);
-            this.stars.TabIndex = 12;
-            this.stars.Text = "tel";
+            this.classement.AutoSize = true;
+            this.classement.Location = new System.Drawing.Point(305, 14);
+            this.classement.Name = "classement";
+            this.classement.Size = new System.Drawing.Size(99, 25);
+            this.classement.TabIndex = 13;
+            this.classement.Text = "classement";
+            // 
+            // num_tel
+            // 
+            this.num_tel.AutoSize = true;
+            this.num_tel.Location = new System.Drawing.Point(200, 12);
+            this.num_tel.Name = "num_tel";
+            this.num_tel.Size = new System.Drawing.Size(31, 25);
+            this.num_tel.TabIndex = 12;
+            this.num_tel.Text = "tel";
             // 
             // hotel_title
             // 
@@ -131,6 +130,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
             this.ClientSize = new System.Drawing.Size(876, 538);
             this.Controls.Add(this.panel1);
             this.Name = "hotels";
@@ -147,9 +147,9 @@
         private Panel panel1;
         private Button update;
         private Button delete;
-        private Label label1;
         private Label address;
-        private Label stars;
+        private Label classement;
+        private Label num_tel;
         private Label hotel_title;
         private Label Id_hotel;
     }
