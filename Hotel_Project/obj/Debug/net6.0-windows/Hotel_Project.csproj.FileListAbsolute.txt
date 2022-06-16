@@ -39,3 +39,10 @@ C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-window
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.adminDashboard.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.UC.UcHotel.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.UC.Component1.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.dashboard.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.categories.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.clients.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.employees.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.reservations.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.rooms.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.hotels.resources

@@ -82,5 +82,11 @@ namespace Hotel_Project
             adminDashboard a = new adminDashboard();
             a.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            dashboard a = new dashboard();
+            a.Show();
+        }
     }
 }

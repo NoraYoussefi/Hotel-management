@@ -10,6 +10,9 @@
     <Compile Update="Views\adminDashboard.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Views\dashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Views\Hotels.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -26,6 +29,24 @@
       <SubType>Component</SubType>
     </Compile>
     <Compile Update="Views\Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\UnderDashboard\categories.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\UnderDashboard\clients.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\UnderDashboard\employees.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\UnderDashboard\hotels.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\UnderDashboard\reservations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="Views\UnderDashboard\rooms.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

@@ -94,5 +94,10 @@ namespace Hotel_Project
                 y = y + 50;
             }
         }
+
+        private void panel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
