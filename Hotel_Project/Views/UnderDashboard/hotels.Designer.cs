@@ -47,7 +47,8 @@
             this.panel1.Controls.Add(this.num_tel);
             this.panel1.Controls.Add(this.hotel_title);
             this.panel1.Controls.Add(this.Id_hotel);
-            this.panel1.Location = new System.Drawing.Point(24, 30);
+            this.panel1.ForeColor = System.Drawing.Color.Snow;
+            this.panel1.Location = new System.Drawing.Point(2, 31);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(891, 56);
             this.panel1.TabIndex = 1;
@@ -98,6 +99,7 @@
             this.num_tel.Size = new System.Drawing.Size(36, 25);
             this.num_tel.TabIndex = 12;
             this.num_tel.Text = "tel";
+            this.num_tel.Click += new System.EventHandler(this.num_tel_Click);
             // 
             // hotel_title
             // 
@@ -124,10 +126,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
-            this.ClientSize = new System.Drawing.Size(964, 538);
+            this.ClientSize = new System.Drawing.Size(895, 534);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Segoe UI Black", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.ForeColor = System.Drawing.Color.Snow;
+            this.ForeColor = System.Drawing.Color.Black;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Name = "hotels";
             this.Text = "hotels";

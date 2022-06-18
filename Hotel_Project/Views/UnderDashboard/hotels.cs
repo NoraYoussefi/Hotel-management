@@ -30,6 +30,7 @@ namespace Hotel_Project.Views.UnderDashboard
         {
             Database db = new Database();
             List<Hotel> AllHotels = db.Hotels.Include(c => c.Cassement).Include(a => a.Address).ToList();
+         
             int y = 55;
             foreach (Hotel h in AllHotels)
             {
@@ -45,7 +46,6 @@ namespace Hotel_Project.Views.UnderDashboard
                 panel1.Name = "panel1";
                 panel1.Size = new System.Drawing.Size(847, 51);
                 panel1.TabIndex = 0;
-                panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
 
 
                 Id_hotel.AutoSize = true;
@@ -54,7 +54,7 @@ namespace Hotel_Project.Views.UnderDashboard
                 Id_hotel.Size = new System.Drawing.Size(28, 25);
                 Id_hotel.TabIndex = 10;
                 Id_hotel.Text = h.Id.ToString();
-                Id_hotel.BringToFront();
+                Id_hotel.ForeColor = Color.Black;
 
                 //hotel_title
                 Label hotel_title;
@@ -109,11 +109,11 @@ namespace Hotel_Project.Views.UnderDashboard
                 update.FlatAppearance.BorderSize = 0;
                 update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                 update.Location = new System.Drawing.Point(672, 3);
-                update.Name = "update";
+                update.Name = h.Id.ToString();
                 update.Size = new System.Drawing.Size(51, 42);
                 update.TabIndex = 16;
                 update.UseVisualStyleBackColor = false;
-                update.Click += (s, e) => update_Click(s, e, h);
+                update.Click += (s, e) => update_Click(s, e);
 
 
 
@@ -131,8 +131,10 @@ namespace Hotel_Project.Views.UnderDashboard
                 delete.Size = new System.Drawing.Size(53, 46);
                 delete.TabIndex = 15;
                 delete.UseVisualStyleBackColor = false;
+                delete.Click += (s, e) => delete_Click(s, e, h);
 
-
+                panel1.ResumeLayout(false);
+                panel1.PerformLayout();
 
                 panel1.Controls.Add(hotel_title);
                 panel1.Controls.Add(Id_hotel);
@@ -154,17 +156,42 @@ namespace Hotel_Project.Views.UnderDashboard
         {
 
         }
-        private void update_Click(object sender, EventArgs e, Hotel h )
+        private void update_Click(object sender, EventArgs e)
         {
-            updateHotel updateHotel = new updateHotel();
+            Database db = new Database();
+            Button update = (Button)sender;
+            int id = Int32.Parse(update.Name.ToString());
+            Hotel hotel = db.Hotels.Where(x => x.Id == id).First();
+
+            updateHotel updateHotel = new updateHotel(hotel);
             updateHotel.Show();
 
         }
+        private void delete_Click(object sender, EventArgs e, Hotel h)
+        {
+            Database db = new Database();
+            /* db.Entry(h).State = EntityState.Deleted;
+             db.SaveChanges();*/
+            /*  Hotel hotel = new Hotel();
+              db.Remove(db.Hotels.Single(h => h.Id == h.Id));
+              db.SaveChanges();*/
+
+            Hotel hotel = new Hotel() { Id = h.Id };
+            db.Hotels.Attach(hotel);
+            db.Hotels.Remove(hotel);
+            db.SaveChanges();
+        }
+
 
         private void add_hotel_Click(object sender, EventArgs e)
         {
             addHotel addHotel = new addHotel();
             addHotel.Show();
+        }
+
+        private void num_tel_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

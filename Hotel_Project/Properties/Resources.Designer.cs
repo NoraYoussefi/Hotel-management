@@ -93,6 +93,26 @@ namespace Hotel_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap editing__1_ {
+            get {
+                object obj = ResourceManager.GetObject("editing (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap editing__1__removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("editing__1_-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap undraw_Control_panel_re_y3ar_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("undraw_Control_panel_re_y3ar-removebg-preview", resourceCulture);

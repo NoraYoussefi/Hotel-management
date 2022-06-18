@@ -252,5 +252,45 @@ namespace Hotel_Project.Views
         {
 
         }
+
+        private void tabPage2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void category_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void rooms_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tabPage5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void flowLayoutPanel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void tabPage6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void admin_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

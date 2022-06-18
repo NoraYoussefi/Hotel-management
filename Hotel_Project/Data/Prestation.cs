@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Hotel_Project.Data
 {
-    internal class Prestation
+    public class Prestation
     {
         
         public int Id{ get; set; }

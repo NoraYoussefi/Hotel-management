@@ -135,7 +135,7 @@ namespace Hotel_Project.Views
 
         private void button1_Click(object sender, EventArgs e)
         {
-            OpenChildForm(new UnderDashboard.employees(), sender);
+            OpenChildForm(new UnderDashboard.users(), sender);
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -230,7 +230,7 @@ namespace Hotel_Project.Views
 
         private void roundedButton1_Click(object sender, EventArgs e)
         {
-            OpenChildForm_1(new UnderDashboard.employees(), sender);
+            OpenChildForm_1(new UnderDashboard.users(), sender);
         }
 
         private void roundedButton3_Click(object sender, EventArgs e)

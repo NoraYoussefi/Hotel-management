@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Hotel_Project.Data
 {
-    internal class Room
+    public class Room
     {
         [Key]
         public int Id{ get; set; }

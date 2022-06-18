@@ -169,7 +169,7 @@
             this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.MaximumSize = new System.Drawing.Size(333, 712);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(234, 656);
+            this.panel1.Size = new System.Drawing.Size(211, 656);
             this.panel1.TabIndex = 3;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -310,10 +310,10 @@
             this.panelTitleBar.Controls.Add(this.btnCloseChildForm);
             this.panelTitleBar.Controls.Add(this.lblTitle);
             this.panelTitleBar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panelTitleBar.Location = new System.Drawing.Point(234, 0);
+            this.panelTitleBar.Location = new System.Drawing.Point(211, 0);
             this.panelTitleBar.Margin = new System.Windows.Forms.Padding(4);
             this.panelTitleBar.Name = "panelTitleBar";
-            this.panelTitleBar.Size = new System.Drawing.Size(898, 62);
+            this.panelTitleBar.Size = new System.Drawing.Size(921, 62);
             this.panelTitleBar.TabIndex = 4;
             this.panelTitleBar.Paint += new System.Windows.Forms.PaintEventHandler(this.panelTitleBar_Paint);
             // 
@@ -349,10 +349,10 @@
             this.panelDesktopPane.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
             this.panelDesktopPane.Controls.Add(this.pictureBox2);
             this.panelDesktopPane.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelDesktopPane.Location = new System.Drawing.Point(234, 62);
+            this.panelDesktopPane.Location = new System.Drawing.Point(211, 62);
             this.panelDesktopPane.Margin = new System.Windows.Forms.Padding(4);
             this.panelDesktopPane.Name = "panelDesktopPane";
-            this.panelDesktopPane.Size = new System.Drawing.Size(898, 594);
+            this.panelDesktopPane.Size = new System.Drawing.Size(921, 594);
             this.panelDesktopPane.TabIndex = 5;
             this.panelDesktopPane.Paint += new System.Windows.Forms.PaintEventHandler(this.panelDesktopPane_Paint);
             // 

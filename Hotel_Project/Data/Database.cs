@@ -8,7 +8,7 @@ using Npgsql;
 
 namespace Hotel_Project.Data
 {
-    internal class Database: DbContext
+    public class Database: DbContext
     {
         
 

@@ -37,14 +37,14 @@ C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\bin\Debug\net6.0-window
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\bin\Debug\net6.0-windows\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.csproj.CopyComplete
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.adminDashboard.resources
-C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.UC.UcHotel.resources
-C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.UC.Component1.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.dashboard.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.categories.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.clients.resources
-C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.employees.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.reservations.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.rooms.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.hotels.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.update.updateHotel.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.add.addHotel.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.add.addRoom.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.users.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.add.addUser.resources

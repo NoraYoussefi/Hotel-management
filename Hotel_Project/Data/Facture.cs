@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 namespace Hotel_Project.Data
 {
     [Table("Factures")]
-    internal class PrestationReservation
+    public class PrestationReservation
     {
         public int Id { get; set; }
         public DateTime DateFacture { get; set; }

@@ -29,6 +29,13 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(adminDashboard));
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.tabPage6 = new System.Windows.Forms.TabPage();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.category = new System.Windows.Forms.TabPage();
+            this.rooms = new System.Windows.Forms.TabPage();
+            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
             this.admin = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.test = new System.Windows.Forms.Label();
@@ -40,18 +47,91 @@
             this.stars = new System.Windows.Forms.Label();
             this.title = new System.Windows.Forms.Label();
             this.Id_hotel = new System.Windows.Forms.Label();
-            this.rooms = new System.Windows.Forms.TabPage();
-            this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
-            this.category = new System.Windows.Forms.TabPage();
-            this.tabPage4 = new System.Windows.Forms.TabPage();
-            this.tabPage5 = new System.Windows.Forms.TabPage();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.Num = new System.Windows.Forms.Label();
+            this.hotel = new System.Windows.Forms.Label();
+            this.isReserved = new System.Windows.Forms.Label();
+            this.price = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.room_tel = new System.Windows.Forms.Label();
+            this.Id_room = new System.Windows.Forms.Label();
+            this.rooms.SuspendLayout();
             this.admin.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.panel1.SuspendLayout();
-            this.rooms.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
+            this.tabPage2.Location = new System.Drawing.Point(4, 34);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage2.Size = new System.Drawing.Size(1100, 606);
+            this.tabPage2.TabIndex = 6;
+            this.tabPage2.Text = "factures";
+            // 
+            // tabPage6
+            // 
+            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
+            this.tabPage6.Location = new System.Drawing.Point(4, 34);
+            this.tabPage6.Name = "tabPage6";
+            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage6.Size = new System.Drawing.Size(1100, 606);
+            this.tabPage6.TabIndex = 5;
+            this.tabPage6.Text = "reservations";
+            // 
+            // tabPage5
+            // 
+            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
+            this.tabPage5.Location = new System.Drawing.Point(4, 34);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage5.Size = new System.Drawing.Size(1100, 606);
+            this.tabPage5.TabIndex = 4;
+            this.tabPage5.Text = "employees";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
+            this.tabPage4.ForeColor = System.Drawing.Color.Black;
+            this.tabPage4.Location = new System.Drawing.Point(4, 34);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage4.Size = new System.Drawing.Size(1100, 606);
+            this.tabPage4.TabIndex = 3;
+            this.tabPage4.Text = "clients";
+            // 
+            // category
+            // 
+            this.category.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
+            this.category.Location = new System.Drawing.Point(4, 34);
+            this.category.Name = "category";
+            this.category.Padding = new System.Windows.Forms.Padding(3);
+            this.category.Size = new System.Drawing.Size(1100, 606);
+            this.category.TabIndex = 2;
+            this.category.Text = "categories";
+            // 
+            // rooms
+            // 
+            this.rooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
+            this.rooms.Controls.Add(this.flowLayoutPanel2);
+            this.rooms.Location = new System.Drawing.Point(4, 34);
+            this.rooms.Name = "rooms";
+            this.rooms.Padding = new System.Windows.Forms.Padding(3);
+            this.rooms.Size = new System.Drawing.Size(1100, 606);
+            this.rooms.TabIndex = 1;
+            this.rooms.Text = "rooms";
+            // 
+            // flowLayoutPanel2
+            // 
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(133, 47);
+            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(835, 513);
+            this.flowLayoutPanel2.TabIndex = 2;
             // 
             // admin
             // 
@@ -73,6 +153,7 @@
             // tabPage1
             // 
             this.tabPage1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
+            this.tabPage1.Controls.Add(this.panel2);
             this.tabPage1.Controls.Add(this.test);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Location = new System.Drawing.Point(4, 34);
@@ -186,74 +267,110 @@
             this.Id_hotel.Text = "Id";
             this.Id_hotel.Click += new System.EventHandler(this.Id_Click);
             // 
-            // rooms
+            // panel2
             // 
-            this.rooms.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
-            this.rooms.Controls.Add(this.flowLayoutPanel2);
-            this.rooms.Location = new System.Drawing.Point(4, 34);
-            this.rooms.Name = "rooms";
-            this.rooms.Padding = new System.Windows.Forms.Padding(3);
-            this.rooms.Size = new System.Drawing.Size(1100, 606);
-            this.rooms.TabIndex = 1;
-            this.rooms.Text = "rooms";
+            this.panel2.BackColor = System.Drawing.Color.White;
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.Num);
+            this.panel2.Controls.Add(this.hotel);
+            this.panel2.Controls.Add(this.isReserved);
+            this.panel2.Controls.Add(this.price);
+            this.panel2.Controls.Add(this.button1);
+            this.panel2.Controls.Add(this.button2);
+            this.panel2.Controls.Add(this.room_tel);
+            this.panel2.Controls.Add(this.Id_room);
+            this.panel2.Location = new System.Drawing.Point(97, 278);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(906, 51);
+            this.panel2.TabIndex = 4;
             // 
-            // flowLayoutPanel2
+            // label2
             // 
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(133, 47);
-            this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(835, 513);
-            this.flowLayoutPanel2.TabIndex = 2;
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(624, 13);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 25);
+            this.label2.TabIndex = 16;
+            this.label2.Text = "label2";
             // 
-            // category
+            // Num
             // 
-            this.category.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
-            this.category.Location = new System.Drawing.Point(4, 34);
-            this.category.Name = "category";
-            this.category.Padding = new System.Windows.Forms.Padding(3);
-            this.category.Size = new System.Drawing.Size(1100, 606);
-            this.category.TabIndex = 2;
-            this.category.Text = "categories";
+            this.Num.AutoSize = true;
+            this.Num.Location = new System.Drawing.Point(102, 14);
+            this.Num.Name = "Num";
+            this.Num.Size = new System.Drawing.Size(48, 25);
+            this.Num.TabIndex = 11;
+            this.Num.Text = "num";
             // 
-            // tabPage4
+            // hotel
             // 
-            this.tabPage4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
-            this.tabPage4.ForeColor = System.Drawing.Color.Black;
-            this.tabPage4.Location = new System.Drawing.Point(4, 34);
-            this.tabPage4.Name = "tabPage4";
-            this.tabPage4.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage4.Size = new System.Drawing.Size(1100, 606);
-            this.tabPage4.TabIndex = 3;
-            this.tabPage4.Text = "clients";
+            this.hotel.AutoSize = true;
+            this.hotel.Location = new System.Drawing.Point(536, 13);
+            this.hotel.Name = "hotel";
+            this.hotel.Size = new System.Drawing.Size(52, 25);
+            this.hotel.TabIndex = 15;
+            this.hotel.Text = "hotel";
             // 
-            // tabPage5
+            // isReserved
             // 
-            this.tabPage5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
-            this.tabPage5.Location = new System.Drawing.Point(4, 34);
-            this.tabPage5.Name = "tabPage5";
-            this.tabPage5.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage5.Size = new System.Drawing.Size(1100, 606);
-            this.tabPage5.TabIndex = 4;
-            this.tabPage5.Text = "employees";
+            this.isReserved.AutoSize = true;
+            this.isReserved.Location = new System.Drawing.Point(400, 13);
+            this.isReserved.Name = "isReserved";
+            this.isReserved.Size = new System.Drawing.Size(95, 25);
+            this.isReserved.TabIndex = 14;
+            this.isReserved.Text = "isReserved";
             // 
-            // tabPage6
+            // price
             // 
-            this.tabPage6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
-            this.tabPage6.Location = new System.Drawing.Point(4, 34);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage6.Size = new System.Drawing.Size(1100, 606);
-            this.tabPage6.TabIndex = 5;
-            this.tabPage6.Text = "reservations";
+            this.price.AutoSize = true;
+            this.price.Location = new System.Drawing.Point(294, 13);
+            this.price.Name = "price";
+            this.price.Size = new System.Drawing.Size(50, 25);
+            this.price.TabIndex = 13;
+            this.price.Text = "price";
             // 
-            // tabPage2
+            // button1
             // 
-            this.tabPage2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
-            this.tabPage2.Location = new System.Drawing.Point(4, 34);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(1100, 606);
-            this.tabPage2.TabIndex = 6;
-            this.tabPage2.Text = "factures";
+            this.button1.BackColor = System.Drawing.Color.White;
+            this.button1.BackgroundImage = global::Hotel_Project.Properties.Resources.editing__1_;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Location = new System.Drawing.Point(770, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(48, 45);
+            this.button1.TabIndex = 16;
+            this.button1.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.button2.BackColor = System.Drawing.Color.White;
+            this.button2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button2.BackgroundImage")));
+            this.button2.FlatAppearance.BorderSize = 0;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(839, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(53, 46);
+            this.button2.TabIndex = 15;
+            this.button2.UseVisualStyleBackColor = false;
+            // 
+            // room_tel
+            // 
+            this.room_tel.AutoSize = true;
+            this.room_tel.Location = new System.Drawing.Point(210, 13);
+            this.room_tel.Name = "room_tel";
+            this.room_tel.Size = new System.Drawing.Size(31, 25);
+            this.room_tel.TabIndex = 12;
+            this.room_tel.Text = "tel";
+            // 
+            // Id_room
+            // 
+            this.Id_room.AutoSize = true;
+            this.Id_room.Location = new System.Drawing.Point(24, 14);
+            this.Id_room.Name = "Id_room";
+            this.Id_room.Size = new System.Drawing.Size(28, 25);
+            this.Id_room.TabIndex = 10;
+            this.Id_room.Text = "Id";
             // 
             // adminDashboard
             // 
@@ -265,27 +382,30 @@
             this.Name = "adminDashboard";
             this.Text = "adminDashboard";
             this.Load += new System.EventHandler(this.adminDashboard_Load);
+            this.rooms.ResumeLayout(false);
             this.admin.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.rooms.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
+        private TabPage tabPage2;
+        private TabPage tabPage6;
+        private TabPage tabPage5;
+        private TabPage tabPage4;
+        private TabPage category;
+        private TabPage rooms;
+        private FlowLayoutPanel flowLayoutPanel2;
         private TabControl admin;
         private TabPage tabPage1;
-        private TabPage rooms;
-        private TabPage category;
-        private TabPage tabPage4;
-        private TabPage tabPage5;
-        private TabPage tabPage6;
-        private TabPage tabPage2;
-        private FlowLayoutPanel flowLayoutPanel2;
+        private Label test;
         private Panel panel1;
         private Button update;
         private Button delete;
@@ -294,6 +414,15 @@
         private Label stars;
         private Label title;
         private Label Id_hotel;
-        private Label test;
+        private Panel panel2;
+        private Label label2;
+        private Label Num;
+        private Label hotel;
+        private Label isReserved;
+        private Label price;
+        private Button button1;
+        private Button button2;
+        private Label room_tel;
+        private Label Id_room;
     }
 }
