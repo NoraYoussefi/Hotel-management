@@ -171,16 +171,17 @@ namespace Hotel_Project.Views.UnderDashboard
                 update.FlatAppearance.BorderSize = 0;
                 update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                 update.Location = new System.Drawing.Point(770, 3);
-                update.Name = "update";
+                update.Name = r.Id.ToString();
                 update.Size = new System.Drawing.Size(48, 45);
                 update.TabIndex = 16;
                 update.UseVisualStyleBackColor = false;
+                update.Click += (s, e) => update_room(s, e);
                 // 
                 // delete
                 // 
                 delete.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
                 delete.BackColor = System.Drawing.Color.White;
-                delete.BackgroundImage = global::Hotel_Project.Properties.Resources.cloud_sync1;
+                delete.BackgroundImage = global::Hotel_Project.Properties.Resources.delete;
                 delete.FlatAppearance.BorderSize = 0;
                 delete.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                 delete.Location = new System.Drawing.Point(839, 3);
@@ -188,23 +189,24 @@ namespace Hotel_Project.Views.UnderDashboard
                 delete.Size = new System.Drawing.Size(53, 46);
                 delete.TabIndex = 15;
                 delete.UseVisualStyleBackColor = false;
-                
+                delete.Click += (s, e) => delete_room(s, e, r);
+
                 // 
                 // rooms
                 // 
-               /* AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-                AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-                AutoScroll = true;
-                BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
-                ClientSize = new System.Drawing.Size(968, 542);
-                Controls.Add(this.panel2);
+                /* AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
+                 AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+                 AutoScroll = true;
+                 BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
+                 ClientSize = new System.Drawing.Size(968, 542);
+                 Controls.Add(this.panel2);
 
-                Controls.Add(this.panel1);
-                Name = "rooms";
-                Text = "rooms";
-                Load += new System.EventHandler(this.rooms_Load);
-*/
-               
+                 Controls.Add(this.panel1);
+                 Name = "rooms";
+                 Text = "rooms";
+                 Load += new System.EventHandler(this.rooms_Load);
+ */
+
                 panel2.ResumeLayout(false);
                 panel2.PerformLayout();
                 ResumeLayout(false);
@@ -224,6 +226,26 @@ namespace Hotel_Project.Views.UnderDashboard
 
 
             }
+        }
+
+        private void update_room(object s, EventArgs e)
+        {
+            Database db = new Database();
+            Button update = (Button)s;
+            int id = Int32.Parse(update.Name.ToString());
+            Room room = db.Rooms.Where(x => x.Id == id).First();
+
+            updateRoom updateRoom = new updateRoom(room);
+            updateRoom.Show();
+        }
+
+        private void delete_room(object s, EventArgs e, Room r)
+        {
+            Database db = new Database();
+            Room room = new Room() { Id = r.Id };
+            db.Rooms.Attach(room);
+            db.Rooms.Remove(room);
+            db.SaveChanges();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)

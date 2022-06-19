@@ -28,19 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(users));
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.role = new System.Windows.Forms.Label();
-            this.codepostal = new System.Windows.Forms.Label();
-            this.country = new System.Windows.Forms.Label();
-            this.city = new System.Windows.Forms.Label();
-            this.tel = new System.Windows.Forms.Label();
-            this.cin = new System.Windows.Forms.Label();
-            this.email = new System.Windows.Forms.Label();
-            this.name = new System.Windows.Forms.Label();
-            this.id = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -53,134 +40,8 @@
             this.label16 = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3.SuspendLayout();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.White;
-            this.panel3.Controls.Add(this.role);
-            this.panel3.Controls.Add(this.codepostal);
-            this.panel3.Controls.Add(this.country);
-            this.panel3.Controls.Add(this.city);
-            this.panel3.Controls.Add(this.tel);
-            this.panel3.Controls.Add(this.cin);
-            this.panel3.Controls.Add(this.email);
-            this.panel3.Controls.Add(this.name);
-            this.panel3.Controls.Add(this.id);
-            this.panel3.Controls.Add(this.button3);
-            this.panel3.Controls.Add(this.button4);
-            this.panel3.Location = new System.Drawing.Point(7, 127);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(888, 51);
-            this.panel3.TabIndex = 5;
-            // 
-            // role
-            // 
-            this.role.AutoSize = true;
-            this.role.Location = new System.Drawing.Point(686, 14);
-            this.role.Name = "role";
-            this.role.Size = new System.Drawing.Size(46, 25);
-            this.role.TabIndex = 35;
-            this.role.Text = "Role";
-            // 
-            // codepostal
-            // 
-            this.codepostal.AutoSize = true;
-            this.codepostal.Location = new System.Drawing.Point(562, 14);
-            this.codepostal.Name = "codepostal";
-            this.codepostal.Size = new System.Drawing.Size(103, 25);
-            this.codepostal.TabIndex = 34;
-            this.codepostal.Text = "Postal code";
-            // 
-            // country
-            // 
-            this.country.AutoSize = true;
-            this.country.Location = new System.Drawing.Point(400, 14);
-            this.country.Name = "country";
-            this.country.Size = new System.Drawing.Size(72, 25);
-            this.country.TabIndex = 32;
-            this.country.Text = "country";
-            // 
-            // city
-            // 
-            this.city.AutoSize = true;
-            this.city.Location = new System.Drawing.Point(498, 14);
-            this.city.Name = "city";
-            this.city.Size = new System.Drawing.Size(39, 25);
-            this.city.TabIndex = 33;
-            this.city.Text = "city";
-            // 
-            // tel
-            // 
-            this.tel.AutoSize = true;
-            this.tel.Location = new System.Drawing.Point(327, 14);
-            this.tel.Name = "tel";
-            this.tel.Size = new System.Drawing.Size(31, 25);
-            this.tel.TabIndex = 31;
-            this.tel.Text = "tel";
-            // 
-            // cin
-            // 
-            this.cin.AutoSize = true;
-            this.cin.Location = new System.Drawing.Point(163, 14);
-            this.cin.Name = "cin";
-            this.cin.Size = new System.Drawing.Size(41, 25);
-            this.cin.TabIndex = 29;
-            this.cin.Text = "CIN";
-            // 
-            // email
-            // 
-            this.email.AutoSize = true;
-            this.email.Location = new System.Drawing.Point(240, 14);
-            this.email.Name = "email";
-            this.email.Size = new System.Drawing.Size(54, 25);
-            this.email.TabIndex = 30;
-            this.email.Text = "email";
-            // 
-            // name
-            // 
-            this.name.AutoSize = true;
-            this.name.Location = new System.Drawing.Point(72, 14);
-            this.name.Name = "name";
-            this.name.Size = new System.Drawing.Size(56, 25);
-            this.name.TabIndex = 28;
-            this.name.Text = "name";
-            // 
-            // id
-            // 
-            this.id.AutoSize = true;
-            this.id.Location = new System.Drawing.Point(15, 14);
-            this.id.Name = "id";
-            this.id.Size = new System.Drawing.Size(28, 25);
-            this.id.TabIndex = 27;
-            this.id.Text = "Id";
-            // 
-            // button3
-            // 
-            this.button3.BackColor = System.Drawing.Color.White;
-            this.button3.BackgroundImage = global::Hotel_Project.Properties.Resources.editing__1_;
-            this.button3.FlatAppearance.BorderSize = 0;
-            this.button3.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button3.Location = new System.Drawing.Point(770, 3);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(48, 45);
-            this.button3.TabIndex = 16;
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.button4.BackColor = System.Drawing.Color.White;
-            this.button4.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("button4.BackgroundImage")));
-            this.button4.FlatAppearance.BorderSize = 0;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.Location = new System.Drawing.Point(839, 3);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(53, 46);
-            this.button4.TabIndex = 15;
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // label7
             // 
@@ -267,7 +128,7 @@
             // label15
             // 
             this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(562, 15);
+            this.label15.Location = new System.Drawing.Point(552, 15);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(103, 25);
             this.label15.TabIndex = 24;
@@ -284,7 +145,7 @@
             // label17
             // 
             this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(686, 15);
+            this.label17.Location = new System.Drawing.Point(671, 15);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(46, 25);
             this.label17.TabIndex = 26;
@@ -316,13 +177,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(170)))), ((int)(((byte)(161)))), ((int)(((byte)(163)))));
             this.ClientSize = new System.Drawing.Size(899, 538);
-            this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "users";
             this.Text = "employees";
             this.Load += new System.EventHandler(this.users_Load);
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             this.ResumeLayout(false);
@@ -330,18 +188,6 @@
         }
 
         #endregion
-        private Panel panel3;
-        private Button button3;
-        private Button button4;
-        private Label role;
-        private Label codepostal;
-        private Label country;
-        private Label city;
-        private Label tel;
-        private Label cin;
-        private Label email;
-        private Label name;
-        private Label id;
         private Label label7;
         private Label label6;
         private Label label4;

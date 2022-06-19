@@ -47,5 +47,11 @@ namespace Hotel_Project
         {
 
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Hotels hotels = new Hotels();
+            hotels.Show();
+        }
     }
 }
