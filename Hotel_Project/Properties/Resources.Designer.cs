@@ -143,6 +143,16 @@ namespace Hotel_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap hotel_room_with_beachfront_view {
+            get {
+                object obj = ResourceManager.GetObject("hotel room with beachfront view", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap hotel1 {
             get {
                 object obj = ResourceManager.GetObject("hotel1", resourceCulture);
@@ -173,9 +183,49 @@ namespace Hotel_Project.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap undraw_cooking_lyxy_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("undraw_cooking_lyxy-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap undraw_Futuristic_interface_re_0cm6_removebg_preview {
             get {
                 object obj = ResourceManager.GetObject("undraw_Futuristic_interface_re_0cm6-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undraw_Receipt_re_fre3_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("undraw_Receipt_re_fre3-removebg-preview", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undraw_Receipt_re_fre3_removebg_preview__1_ {
+            get {
+                object obj = ResourceManager.GetObject("undraw_Receipt_re_fre3-removebg-preview (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undraw_Travel_plans_re_103r_removebg_preview {
+            get {
+                object obj = ResourceManager.GetObject("undraw_Travel_plans_re_103r-removebg-preview", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

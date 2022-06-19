@@ -1,5 +1,6 @@
 ﻿using Hotel_Project.Data;
 using Hotel_Project.Properties;
+using Hotel_Project.Views;
 using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
@@ -197,6 +198,7 @@ namespace Hotel_Project
                 button1.TabIndex = 2;
                 button1.Text = "see more";
                 button1.UseVisualStyleBackColor = false;
+                button1.Click += (s, e) => seeMore(s, e, h);
                 // 
                 // panel1
                 // 
@@ -235,6 +237,14 @@ namespace Hotel_Project
                 /*this.AutoScroll = true;*/
             }
         }
+
+        private void seeMore(object s, EventArgs e, Hotel h)
+        {
+            Categories categories = new Categories(h);
+            categories.Show();
+            this.Close();
+        }
+
         private void SetAutoScrollMargins()
         {
             Panel panel5 = new System.Windows.Forms.Panel();
@@ -265,6 +275,11 @@ namespace Hotel_Project
         }
 
         private void pictureBox3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint_1(object sender, PaintEventArgs e)
         {
 
         }

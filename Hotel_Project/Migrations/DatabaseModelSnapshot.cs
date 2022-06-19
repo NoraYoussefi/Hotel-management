@@ -138,6 +138,28 @@ namespace Hotel_Project.Migrations
                     b.ToTable("Clients");
                 });
 
+            modelBuilder.Entity("Hotel_Project.Data.Facture", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("integer");
+
+                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("DateFacture")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<bool>("Payed")
+                        .HasColumnType("boolean");
+
+                    b.Property<float>("Total")
+                        .HasColumnType("real");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Factures");
+                });
+
             modelBuilder.Entity("Hotel_Project.Data.Hotel", b =>
                 {
                     b.Property<int>("Id")
@@ -192,44 +214,17 @@ namespace Hotel_Project.Migrations
                         .IsRequired()
                         .HasColumnType("text");
 
+                    b.Property<int>("factureId")
+                        .HasColumnType("integer");
+
                     b.Property<float>("price")
                         .HasColumnType("real");
 
                     b.HasKey("Id");
 
+                    b.HasIndex("factureId");
+
                     b.ToTable("Prestations");
-                });
-
-            modelBuilder.Entity("Hotel_Project.Data.PrestationReservation", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("integer");
-
-                    NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
-
-                    b.Property<DateTime>("DateFacture")
-                        .HasColumnType("timestamp with time zone");
-
-                    b.Property<bool>("Payed")
-                        .HasColumnType("boolean");
-
-                    b.Property<int>("PrestationId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("ReservationId")
-                        .HasColumnType("integer");
-
-                    b.Property<float>("Total")
-                        .HasColumnType("real");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("PrestationId");
-
-                    b.HasIndex("ReservationId");
-
-                    b.ToTable("Factures");
                 });
 
             modelBuilder.Entity("Hotel_Project.Data.Reservation", b =>
@@ -262,6 +257,9 @@ namespace Hotel_Project.Migrations
                     b.Property<DateTime>("endDate")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<int>("factureId")
+                        .HasColumnType("integer");
+
                     b.Property<float>("price")
                         .HasColumnType("real");
 
@@ -275,6 +273,8 @@ namespace Hotel_Project.Migrations
                     b.HasIndex("RoomId");
 
                     b.HasIndex("UserId");
+
+                    b.HasIndex("factureId");
 
                     b.ToTable("Reservations");
                 });
@@ -366,21 +366,6 @@ namespace Hotel_Project.Migrations
                     b.ToTable("Users");
                 });
 
-            modelBuilder.Entity("PrestationReservation", b =>
-                {
-                    b.Property<int>("PrestationsId")
-                        .HasColumnType("integer");
-
-                    b.Property<int>("ReservationsId")
-                        .HasColumnType("integer");
-
-                    b.HasKey("PrestationsId", "ReservationsId");
-
-                    b.HasIndex("ReservationsId");
-
-                    b.ToTable("PrestationReservation");
-                });
-
             modelBuilder.Entity("Hotel_Project.Data.Hotel", b =>
                 {
                     b.HasOne("Hotel_Project.Data.Address", "Address")
@@ -400,23 +385,15 @@ namespace Hotel_Project.Migrations
                     b.Navigation("Cassement");
                 });
 
-            modelBuilder.Entity("Hotel_Project.Data.PrestationReservation", b =>
+            modelBuilder.Entity("Hotel_Project.Data.Prestation", b =>
                 {
-                    b.HasOne("Hotel_Project.Data.Prestation", "Prestation")
-                        .WithMany()
-                        .HasForeignKey("PrestationId")
+                    b.HasOne("Hotel_Project.Data.Facture", "Facture")
+                        .WithMany("prestations")
+                        .HasForeignKey("factureId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Hotel_Project.Data.Reservation", "Reservation")
-                        .WithMany()
-                        .HasForeignKey("ReservationId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Prestation");
-
-                    b.Navigation("Reservation");
+                    b.Navigation("Facture");
                 });
 
             modelBuilder.Entity("Hotel_Project.Data.Reservation", b =>
@@ -439,7 +416,15 @@ namespace Hotel_Project.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Hotel_Project.Data.Facture", "Facture")
+                        .WithMany("reservations")
+                        .HasForeignKey("factureId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Client");
+
+                    b.Navigation("Facture");
 
                     b.Navigation("Room");
 
@@ -465,21 +450,6 @@ namespace Hotel_Project.Migrations
                     b.Navigation("Hotel");
                 });
 
-            modelBuilder.Entity("PrestationReservation", b =>
-                {
-                    b.HasOne("Hotel_Project.Data.Prestation", null)
-                        .WithMany()
-                        .HasForeignKey("PrestationsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Hotel_Project.Data.Reservation", null)
-                        .WithMany()
-                        .HasForeignKey("ReservationsId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-                });
-
             modelBuilder.Entity("Hotel_Project.Data.Address", b =>
                 {
                     b.Navigation("Hotel")
@@ -499,6 +469,13 @@ namespace Hotel_Project.Migrations
             modelBuilder.Entity("Hotel_Project.Data.Client", b =>
                 {
                     b.Navigation("Reservations");
+                });
+
+            modelBuilder.Entity("Hotel_Project.Data.Facture", b =>
+                {
+                    b.Navigation("prestations");
+
+                    b.Navigation("reservations");
                 });
 
             modelBuilder.Entity("Hotel_Project.Data.Hotel", b =>

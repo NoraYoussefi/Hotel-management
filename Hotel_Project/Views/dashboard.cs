@@ -274,5 +274,10 @@ namespace Hotel_Project.Views
         {
             OpenChildForm(new UnderDashboard.hotels(), sender);
         }
+
+        private void borderRaduis1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

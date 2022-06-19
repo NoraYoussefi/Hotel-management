@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Hotel_Project.Views;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -50,8 +51,9 @@ namespace Hotel_Project
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hotels hotels = new Hotels();
-            hotels.Show();
+            Prestation_or_Boocking prestation_or_Booking = new Prestation_or_Boocking();
+            prestation_or_Booking.Show();
+            this.Close();
         }
     }
 }

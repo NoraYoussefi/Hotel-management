@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Npgsql;
+using Hotel_Project.DesignTools;
 
 namespace Hotel_Project.Data
 {
@@ -28,6 +29,13 @@ namespace Hotel_Project.Data
         public DbSet<Reservation> Reservations { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<PrestationReservation> PrestationReservations { get; set; }
+
+
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.ApplyUtcDateTimeConverter();//Put before seed data and after model creation
+        }
     }
 }
  

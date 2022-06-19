@@ -72,7 +72,7 @@ namespace Hotel_Project.Views.UnderDashboard
                 // 
                 panel3.BackColor = System.Drawing.Color.White;
             panel3.Controls.Add(role);
-            panel3.Location = new System.Drawing.Point(7, 127 +y);
+            panel3.Location = new System.Drawing.Point(7, 70 +y);
             panel3.Name = "panel3";
             panel3.Size = new System.Drawing.Size(888, 51);
             panel3.TabIndex = 5;
@@ -82,7 +82,7 @@ namespace Hotel_Project.Views.UnderDashboard
                 // role
                 // 
                 role.AutoSize = true;
-            role.Location = new System.Drawing.Point(686, 14);
+            role.Location = new System.Drawing.Point(670, 14);
             role.Name = "role";
             role.Size = new System.Drawing.Size(46, 25);
             role.TabIndex = 35;

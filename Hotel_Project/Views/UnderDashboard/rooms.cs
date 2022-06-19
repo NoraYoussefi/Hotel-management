@@ -159,7 +159,7 @@ namespace Hotel_Project.Views.UnderDashboard
                 panel2.Controls.Add(this.delete);
                 panel2.Controls.Add(this.room_tel);
                 panel2.Controls.Add(this.Id_room);*/
-                panel2.Location = new System.Drawing.Point(31, 110 + y);
+                panel2.Location = new System.Drawing.Point(21, 105 + y);
                 panel2.Name = "panel2";
                 panel2.Size = new System.Drawing.Size(906, 51);
                 panel2.TabIndex = 3;

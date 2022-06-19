@@ -50,4 +50,10 @@ C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-window
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.add.addUser.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.update.updateRoom.resources
 C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.UnderDashboard.update.updateUser.resources
-C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Hotel1.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.Categories.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.Rooms.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.Clients.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.ReservationView.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.Prestation_or_Boocking.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.PrestationView.resources
+C:\Users\dell\Desktop\dotNet\Hotel_Project\Hotel_Project\obj\Debug\net6.0-windows\Hotel_Project.Views.FactureView.resources

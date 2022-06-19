@@ -105,7 +105,7 @@ namespace Hotel_Project.Views.UnderDashboard
                 Button update;
                 update = new System.Windows.Forms.Button();
                 update.BackColor = System.Drawing.Color.White;
-                update.BackgroundImage = global::Hotel_Project.Properties.Resources.cloud_sync1;
+                update.BackgroundImage = global::Hotel_Project.Properties.Resources.editing__1_;
                 update.FlatAppearance.BorderSize = 0;
                 update.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
                 update.Location = new System.Drawing.Point(672, 3);
